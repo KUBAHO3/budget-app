@@ -1,11 +1,19 @@
 Rails.application.routes.draw do
-  resources :group_entities
-  resources :groups
-  resources :entities
+  
   devise_for :users
+
+  # Define your application routes per the DSL in https://guides.rubyonrails.org/routing.html
+
+  authenticated :user do
+    root to: "groups#index", as: :authenticated_root
+  end
+
+  resources :groups, only: [:index, :new, :create] do
+    resources :entities, only: [:index, :new, :create]
+  end
+
   get 'home/index'
   # Define your application routes per the DSL in https://guides.rubyonrails.org/routing.html
 
-  get 'home/index'
   root 'home#index'
 end
