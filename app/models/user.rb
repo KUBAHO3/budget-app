@@ -7,4 +7,6 @@ class User < ApplicationRecord
 
   has_many :entity
   has_many :group
+
+  validates :name, presence: true, length: { in: 1..50 }
 end
