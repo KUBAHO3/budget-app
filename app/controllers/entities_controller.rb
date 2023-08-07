@@ -18,7 +18,7 @@ class EntitiesController < ApplicationController
   def create
     @new_entity = current_user.entities.new(entity_params)
     if @new_entity.save
-      GroupEntity.create(group_id: params[:group_id], entity_id: @new_entity.id)
+      GroupEntity.create(group_id: params.require(:entity).permit(:group_id)[:group_id], entity_id: @new_entity.id)
       redirect_to group_entities_path(params[:group_id]), flash: { alert: 'Your transaction is well registered.' }
     else
       redirect_to new_group_entity_path, flash: { alert: 'Something went wrong' }

@@ -17,6 +17,11 @@
     <%= form.number_field :amount, class: 'mt-2 w-56 p-1 rounded', require: true %>
     </div>
 
+    <div class="mt-2">
+      <%= form.label :group_id %><br>
+      <%= form.collection_select :group_id, Group.where(user_id: current_user.id), :id, :name, {prompt: "Select a group"}, class: 'mt-2 w-56 p-1 rounded' %>
+    </div>
+
     <%= form.submit "Submit", class: "bg-sky-400 p-2 rounded text-slate-50 mt-4" %>
     <%= link_to 'Back', group_entities_path(params[:group_id]), class: "bg-sky-400 rounded text-slate-50 mt-4 ml-20 px-4 py-3" %>
   <% end %>
