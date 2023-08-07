@@ -5,7 +5,7 @@ class GroupsController < ApplicationController
 
     @groups.each do |group|
       total = 0
-      group.group_entities.each do |group_entity|
+      group.group_entities.includes(:entity).each do |group_entity|
         total += group_entity.entity.amount
       end
       @total_amount.push(total)

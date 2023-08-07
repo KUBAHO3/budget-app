@@ -5,7 +5,7 @@ class EntitiesController < ApplicationController
     @group = Group.find(params[:group_id])
     @entities = []
     @total_amount = 0
-    @group.group_entities.order(created_at: :desc).each do |group_entity|
+    @group.group_entities.order(created_at: :desc).includes(:entity).each do |group_entity|
       @entities << group_entity.entity
       @total_amount += group_entity.entity.amount
     end
