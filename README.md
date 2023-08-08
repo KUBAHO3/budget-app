@@ -29,7 +29,7 @@ After you're finished please remove all the comments and instructions!
 <!--   <img src="images/icon_head.jpg" alt="logo" width="140"  height="auto" />
   <br/> -->
 
-  <h3><b>Recipe-App</b></h3>
+  <h3><b>Budget-App</b></h3>
 
 </div>
 
@@ -60,7 +60,7 @@ After you're finished please remove all the comments and instructions!
 
 # 📖 Blog-app <a name="about-project"></a>
 
-The Recipe app keeps track of all your recipes, ingredients, and inventory. It will allow you to save ingredients, keep track of what you have, create recipes, and generate a shopping list based on what you have and what you are missing from a recipe. Also, since sharing recipes is an important part of cooking the app should allow you to make them public so anyone can access them.
+This project is about building a mobile web application where you can manage your budget: you have a list of transactions associated with a category, so that you can see how much money you spent and on what.
 
 **Blog-app** is a Ruby on Rails project
 
@@ -88,6 +88,14 @@ The Recipe app keeps track of all your recipes, ingredients, and inventory. It w
     <li><a href="https://html.com/html5/">HTML5</a></li>
     <li><a href="https://www.css3.com/">CSS</a></li>
     <li><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript">JavaScript</a></li>
+  </ul>
+</details>
+
+<summary>Server</summary>
+  <ul>
+    <li><a href="https://www.ruby-lang.org/en/documentation/">Ruby</a></li>
+    <li><a href="https://guides.rubyonrails.org/">Rails</a></li>
+    <li><a href="https://www.postgresql.org/docs/">PostgreSql</a></li>
   </ul>
 </details>
 
@@ -185,10 +193,6 @@ git@github.com:KUBAHO3/Sharing-World.git
 - Twitter: [@KubahoH](https://twitter.com/KubahoH)
 - LinkedIn: [Kubaho Linne Heaven](https://www.linkedin.com/in/kubaho-linne-heaven/)
 
-:bust_in_silhouette: **Mercy Mugambi**
-- GitHub: [@mercymugambi](https://github.com/mercymugambi)
-- Twitter: [@MercyMugambi15](https://twitter.com/MercyMugambi15)
-- LinkedIn: [mercymugambi](https://www.linkedin.com/in/mercymugambi)
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 <!-- FUTURE FEATURES -->
 
@@ -211,6 +215,7 @@ If you like this project please follow me on GitHub & Twitter and also connect o
 
 ## :pray: Acknowledgments <a name="acknowledgements"></a>
 - I would like to thank Microverse for this exercise. <br>
+- I would like to thank [Gregoire Vella on Behance](https://www.behance.net/gregoirevella) for the UI used. <br>
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 <!-- FAQ (optional) -->
