@@ -1,6 +1,6 @@
 class GroupsController < ApplicationController
   def index
-    @groups = current_user.groups.order(created_at: :desc).all
+    @groups = Group.order(created_at: :desc).all
     @total_amount = []
 
     @groups.each do |group|
