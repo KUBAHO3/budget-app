@@ -179,8 +179,10 @@ Example command:
   rspec .
 ```
 ### Deployment <a name="deployment"></a>
-You can deploy this project using:
-netlify or Herouku
+
+- View us [live](https://budgetstuff.onrender.com/)
+
+- Watch walkthrough [video](https://www.loom.com/share/9246d7d14cfd4fe4a0ab55fc9ac01e14)
 <!-- Example:
 ```sh
 git@github.com:KUBAHO3/Sharing-World.git
