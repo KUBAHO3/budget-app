@@ -2,7 +2,7 @@
 *= require template
 
 */
- @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
 
 body {
   font-family: 'Roboto', sans-serif;
@@ -12,7 +12,7 @@ body {
 hr {
   border-top: 1px solid gray;
   width: 320px;
-} 
+}
 
 .group-card {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
@@ -25,7 +25,7 @@ hr {
 
 .button_down {
   position: fixed;
-  bottom: 0px;
+  bottom: 0;
   color: white;
   text-align: center;
 }
@@ -36,4 +36,3 @@ hr {
   color: white;
   text-align: center;
 }
-
